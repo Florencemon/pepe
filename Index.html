@@ -51,32 +51,6 @@
    
        <script src="./index.js"></script>
 
-       <!--EDITOR--->  
-
- 
-       <script>
-    const dataObject = {id: 2,
-    nombre: 'peter',
-    apellido: 'parker',
-    nick: 'spiderman',
-};
-
-
-
-fetch('http://localhost:3000/clientes/',{
-    method:'PUT',
-    headers:{
-    'Content-Type':'application/json'
-    },
-    body:JSON.stringify(dataObject)
-}).then(response=>{
-    return response.json()
-}).then(data=> 
-
-
-
-console.log(data)
-);
-</script>
+       
    </body>
 </html>
