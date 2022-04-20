@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+       <meta charset="UTF-8">
+       
+       <title>SEGUNDA PAGINA WEB</title>
+
+ 
+</head>
+<body>
+
+    <section id="contenedor-main">
+
+        <div>
+             
+
+            <a href="/search/search.html"  target="_blank" class="enlace" >Buscador</a>
+         
+             
+        </div>
+    
+    
+       <div>
+           <h1>Base Clientes</h1>
+           <table>
+               <thead>
+                   <tr>
+                       <th>Nro. Cliente</th>
+                       <th>nombre</th>
+                       <th>apellido</th>
+                       <th>nick</th>
+                       <th>status</th>
+                      
+                   </tr>
+               </thead>
+
+               <tbody class="divisor" id="tabla_body">
+                  
+               </tbody>
+
+              
+            })
+
+
+              </div>
+
+               
+           </table>
+       </div>
+   
+   
+       <script src="./index.js"></script>
+
+       <!--EDITOR--->  
+
+ 
+       <script>
+    const dataObject = {id: 2,
+    nombre: 'peter',
+    apellido: 'parker',
+    nick: 'spiderman',
+};
+
+
+
+fetch('http://localhost:3000/clientes/',{
+    method:'PUT',
+    headers:{
+    'Content-Type':'application/json'
+    },
+    body:JSON.stringify(dataObject)
+}).then(response=>{
+    return response.json()
+}).then(data=> 
+
+
+
+console.log(data)
+);
+</script>
+   </body>
+</html>
